@@ -5,7 +5,7 @@
 def multiply(multiplier, number):
     if multiplier == 0:
         number[:] = [0, 0]
-    else:
+    elif multiplier < 10 and multiplier > 0:
         overflow = number[len(number) - 1] * multiplier // 10  # variable storing value left to add to the next digit
         number[len(number) - 1] = number[len(number) - 1] * multiplier % 10
         for i in range(len(number) - 2, 0, -1):
@@ -15,3 +15,5 @@ def multiply(multiplier, number):
         if overflow > 0:
             number.insert(1, overflow)
             number[0] += 1
+    else:
+        print("Wrong multiplier value!")
