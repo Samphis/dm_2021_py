@@ -17,5 +17,3 @@ def multiply(multiplier, number):
             number[0] += 1
     else:
         print("Wrong multiplier value!")
-
-
