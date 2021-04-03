@@ -111,8 +111,8 @@ def MUL_ND_N(multiplier, number):
         print("Wrong multiplier value!")
 
 
-def MUL_Nk_N (number, deg):
-    if deg > 0:
+def MUL_Nk_N (number, deg): #number - число, deg - степень
+    if deg > 0: 
         number[0] += deg
         for i in range (deg):
             number[1].append(0)
@@ -120,7 +120,7 @@ def MUL_Nk_N (number, deg):
         print("Неверное значение степени")
 
 
-def MUL_NN_N(a, b):
+def MUL_NN_N(a, b): #a и b - множители
     s = [1, [0]]
     c = [1, [0]]
     for i in range(0, len(b[1])):
