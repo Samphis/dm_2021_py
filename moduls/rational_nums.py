@@ -8,8 +8,10 @@
 ##INT_Q_B
 
 
-"""def TRANS_Z_Q(sign,num):#sign(0 - положительное, 1 - отрицательное)
-    if sign == 1:#если sign = 1, то замена num на -num
-        num = -num
-    mas_rational = [num, 1]#массив, состоящий из пары чисел числитель/знаменатель
-    return(mas_rational)"""
+def TRANS_Z_Q(sign,mas):#sign(0 - положительное, 1 - отрицательное)
+                              #mas - массив вида [n, A[...]]
+    if sign == 1:#если sign = 1, то знаменатель отрицательный, если =0, положительный
+        mas_rational = [mas, -1]#массив, состоящий из пары чисел числитель/знаменатель
+    else:
+        mas_rational = [mas, 1]
+    return(mas_rational)
