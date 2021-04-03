@@ -5,5 +5,5 @@ def MUL_Nk_N (number, deg):
         number[0] += deg
         for i in range (deg):
             number[1].append(0)
-    else:
+    elif deg < 0:
         print("Неверное значение степени")
