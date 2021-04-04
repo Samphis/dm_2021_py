@@ -4,6 +4,10 @@
 import natural_nums
 import integer_nums
 
+def STR_TO_RAT(num,den):
+    mas = [integer_nums.STR_TO_INT(num), natural_nums.STR_TO_NAT(den)]
+    return mas
+
 ##RED_Q_Q
 
 

@@ -3,6 +3,9 @@
 
 import rational_nums
 
+def STR_TO_POL(coef):
+    
+
 ##ADD_PP_P
 
 

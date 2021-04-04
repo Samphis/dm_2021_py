@@ -1,6 +1,10 @@
 ##Модули: N-1 -> N-14
 ##Формат входных данных: [количество разрядов; [число]]
 
+def STR_TO_NAT(num):
+    mas = [len(num), [int(i) for i in (num)]]
+    return mas
+
 
 def COM_NN_D(mas1, mas2):
     if mas1[0] > mas2[0]:   #если в 1-ом числе разрядов больше, то оно больше 2-ого числа
@@ -129,7 +133,7 @@ def MUL_ND_N(multiplier, number):
 
 
 def MUL_Nk_N (number, deg): #number - число, deg - степень
-    if deg > 0: 
+    if deg > 0:
         number[0] += deg
         for i in range (deg):
             number[1].append(0)

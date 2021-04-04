@@ -3,9 +3,18 @@
 
 import natural_nums
 
+def STR_TO_INT(num):
+    if num[0] == '-':
+        mas=[1, len(num)-1, [int(i) for i in (num[1::])]]
+    else:
+        mas=[0, len(num), [int(i) for i in (num)]]
+    return mas
+
+
 def ABS_Z_N(mas1):
     mas1 = mas1[1:]     #берем просто все кроме 1ой цифры
     return mas1
+
 
 def POZ_Z_D(mas):
     #проверим не равно ли 0 число
