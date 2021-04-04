@@ -18,7 +18,11 @@ def POZ_Z_D(mas):
         return 1
 
 
-##MUL_ZM_Z
+def MUL_ZM_Z(mas):
+    if mas[0] == 1:      #если знак -
+        mas[0] = 0       #меняем на +
+    else:                #если знак +
+        mas[0] = 1       #меняем на -
 
 
 def TRANS_N_Z(mas):
