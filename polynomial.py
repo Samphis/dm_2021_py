@@ -16,7 +16,8 @@ def MUL_Pxk_P(mas, k):
     return mas
 
 
-##LED_P_Q
+def LED_P_Q(mas):
+    return mas[1][0]
 
 
 def DEG_P_N(polynom):
