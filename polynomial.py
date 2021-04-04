@@ -11,8 +11,8 @@ import rational_nums
 
 ##MUL_PQ_P
 
-
-##MUL_Pxk_P
+def MUL_Pxk_P(mas, k):
+    return mas[0] + k
 
 
 ##LED_P_Q
