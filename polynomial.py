@@ -38,8 +38,12 @@ def DEG_P_N(polynom):
 
 
 def DER_P_P(mas):
-    mass[0] -= 1
-    mas[1].pop()
+    mas[0] -= 1
+    for i in range(mas[0]):
+        mas[1][i] = mas[1][i] * (mas[0] + 1 - i)
+    if len(mas[1]) > mas[0]:
+        mas[1].pop()
+    return(mas) 
 
 
 ##NMR_P_P
