@@ -12,7 +12,8 @@ import rational_nums
 ##MUL_PQ_P
 
 def MUL_Pxk_P(mas, k):
-    return mas[0] + k
+    mas[0] += k
+    return mas
 
 
 ##LED_P_Q
@@ -43,7 +44,7 @@ def DER_P_P(mas):
         mas[1][i] = mas[1][i] * (mas[0] + 1 - i)
     if len(mas[1]) > mas[0]:
         mas[1].pop()
-    return(mas) 
+    return mas
 
 
 ##NMR_P_P
