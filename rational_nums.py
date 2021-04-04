@@ -1,6 +1,8 @@
 //Модули: Q-1 -> Q-8
 //Формат входных данных: [[числитель]; [знаменатель]]
 
+import natural_nums
+import integer_nums
 
 ##RED_Q_Q
 
