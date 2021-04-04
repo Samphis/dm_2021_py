@@ -37,7 +37,9 @@ def DEG_P_N(polynom):
 ##GCF_PP_P
 
 
-##DER_P_P
+def DER_P_P(mas):
+    mass[0] -= 1
+    mas[1].pop()
 
 
 ##NMR_P_P
