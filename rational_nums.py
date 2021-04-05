@@ -8,6 +8,9 @@ def STR_TO_RAT(num,den):
     mas = [integer_nums.STR_TO_INT(num), natural_nums.STR_TO_NAT(den)]
     return mas
 
+def RAT_TO_NORMAL(mas):
+    return integer_nums.INT_TO_NORMAL(mas[0])+"/"+integer_nums.NAT_TO_NORMAL(mas[1])
+
 ##RED_Q_Q
 
 
