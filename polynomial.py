@@ -29,7 +29,7 @@ def MUL_PQ_P(mult, polynomial):
 
 
 def MUL_Pxk_P(mas, k):
-    mas[0] += k
+    mas[0] = natural_nums.ADD_NN_N(mas[0], k)
     return mas
 
 
