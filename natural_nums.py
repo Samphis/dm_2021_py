@@ -12,7 +12,7 @@ def COM_NN_D(mas1, mas2):
     if mas1[0] < mas2[0]:   #если в 1-ом числе разрядов меньше, то оно меньше 2-ого числа
         return 1
     if mas1[0] == mas2[0]:
-        n = mas1[0]
+        n = mas1[0][0]
         for i in range(n):
             if mas1[1][i] > mas2[1][i]:
                 return 2
@@ -134,7 +134,7 @@ def MUL_ND_N(multiplier, number):
 
 def MUL_Nk_N (number, deg): #number - число, deg - степень
     if deg > 0:
-        number[0] += deg
+        number[0][0] += deg
         for i in range (deg):
             number[1].append(0)
     elif deg < 0:
