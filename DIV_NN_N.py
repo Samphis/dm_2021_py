@@ -14,7 +14,7 @@ def DIV_NN_N(mas1, mas2):
         while quot // 10 != 0:
             count += 1
             quot = quot // 10
-            if quot < 10:
+            if quot < 10:                                    #если наша целая часть > 10, то добавляем остаток этого числа в конец массива
                 result[1].insert(k, quot)
                 k -= 1
             else:
@@ -29,7 +29,7 @@ def DIV_NN_N(mas1, mas2):
         while quot // 10 != 0:
             count += 1
             quot = quot // 10
-            if quot < 10:
+            if quot < 10:                                   #если наша целая часть > 10, то добавляем остаток этого числа в конец массива
                 result[1].insert(k, quot)
                 k -= 1
             else:
